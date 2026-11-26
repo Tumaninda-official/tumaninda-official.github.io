@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Tumaninda – Grosir Sembako &amp; Laundry</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f6f3ec;--surface:#ffffff;--text:#1d2a24;--muted:#56645c;--line:#ddd7c8;
+  --kraft:#9a6b32;--green:#1f6b4a;--blue:#1d6f8f;--onaccent:#ffffff;
+  box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#141a17;--surface:#1c2420;--text:#eef2ee;--muted:#a3b0a8;--line:#2e3a34;
+  --kraft:#d9a766;--green:#4cae82;--blue:#59b3d3;--onaccent:#0f1512;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#141a17;--surface:#1c2420;--text:#eef2ee;--muted:#a3b0a8;--line:#2e3a34;--kraft:#d9a766;--green:#4cae82;--blue:#59b3d3;--onaccent:#0f1512;color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:"Source Sans 3",system-ui,sans-serif;font-size:17px;line-height:1.55}
+h1,h2,h3{font-family:"Bricolage Grotesque",system-ui,sans-serif;line-height:1.1;margin:0}
+a{color:inherit}
+.wrap{max-width:960px;margin:0 auto;padding:0 20px}
+header{padding:20px 0;border-bottom:1px solid var(--line)}
+header .wrap{display:flex;justify-content:space-between;align-items:center;gap:12px}
+.brand{font-family:"Bricolage Grotesque",sans-serif;font-weight:800;font-size:1.15rem;text-decoration:none}
+nav a{margin-left:16px;text-decoration:none;color:var(--muted);font-weight:600}
+nav a:hover,nav a:focus-visible{color:var(--text)}
+.hero{padding:48px 0 36px}
+.hero h1{font-size:clamp(2.1rem,8vw,3.8rem);font-weight:800;max-width:14em}
+.hero p{max-width:34em;color:var(--muted);font-size:1.1rem;margin:18px 0 26px}
+.btn{display:inline-block;padding:13px 22px;border-radius:10px;font-weight:600;text-decoration:none;background:var(--green);color:var(--onaccent);border:2px solid var(--green)}
+.btn.alt{background:transparent;color:var(--text);border-color:var(--line);margin-left:8px}
+.btn:focus-visible,nav a:focus-visible{outline:3px solid var(--blue);outline-offset:2px}
+.split{display:grid;gap:18px;padding:12px 0 40px}
+@media(min-width:720px){.split{grid-template-columns:1fr 1fr}}
+.biz{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:26px;border-top:6px solid var(--kraft)}
+.biz.laundry{border-top-color:var(--blue)}
+.biz h2{font-size:1.7rem;margin-bottom:8px}
+.biz p{color:var(--muted);margin:0 0 14px}
+.biz ul{margin:0 0 18px;padding-left:20px}
+.biz li{margin:5px 0}
+.biz .btn{background:var(--kraft);border-color:var(--kraft);color:var(--onaccent)}
+.biz.laundry .btn{background:var(--blue);border-color:var(--blue)}
+.why{padding:12px 0 40px}
+.why h2{font-size:1.6rem;margin-bottom:16px}
+.why div{display:grid;gap:14px}
+@media(min-width:720px){.why div{grid-template-columns:repeat(3,1fr)}}
+.why h3{font-size:1.1rem;margin-bottom:4px}
+.why p{margin:0;color:var(--muted)}
+.contact{background:var(--surface);border-top:1px solid var(--line);padding:36px 0}
+.contact h2{font-size:1.6rem;margin-bottom:10px}
+.contact p{margin:4px 0;color:var(--muted)}
+.contact strong{color:var(--text)}
+footer{padding:20px 0;color:var(--muted);font-size:.9rem}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <a class="brand" href="#" style="display:flex;align-items:center;gap:10px"><svg width="40" height="40" viewBox="0 0 200 200" aria-hidden="true"><circle cx="100" cy="100" r="96" fill="var(--green)"/><circle cx="100" cy="100" r="86" fill="none" stroke="var(--kraft)" stroke-width="2"/><path d="M100 128 V98" stroke="var(--bg)" stroke-width="5" stroke-linecap="round"/><path d="M100 106 C84 106 70 96 66 78 C84 78 100 88 100 106 Z" fill="var(--bg)"/><path d="M100 98 C112 98 124 90 128 74 C112 74 100 82 100 98 Z" fill="var(--kraft)"/><path d="M60 140 q10 -9 20 0 t20 0 t20 0 t20 0" fill="none" stroke="var(--bg)" stroke-width="5" stroke-linecap="round"/><path d="M72 155 q9 -8 18 0 t18 0 t18 0" fill="none" stroke="var(--bg)" stroke-width="4" stroke-linecap="round" opacity=".55"/></svg>Tumaninda</a>
+  <nav><a href="#grosir">Grosir</a><a href="#laundry">Laundry</a><a href="#kontak">Kontak</a></nav>
+</div></header>
+
+<main>
+<section class="hero"><div class="wrap">
+  <h1>Kebutuhan dapur dan pakaian bersih, satu pintu.</h1>
+  <p>Grosir sembako untuk warung, katering, dan keluarga. Laundry kiloan dan satuan yang rapi dan tepat waktu.</p>
+  <a class="btn" href="https://wa.me/6283892585155">Chat WhatsApp</a>
+  <a class="btn alt" href="#kontak">Lokasi &amp; jam buka</a>
+</div></section>
+
+<section class="wrap split">
+  <article class="biz" id="grosir">
+    <h2>Tumaninda Grosir Sembako</h2>
+    <p>Stok lengkap dengan harga partai untuk pembelian dalam jumlah besar.</p>
+    <ul>
+      <li>Beras 5 kg, 10 kg, 25 kg</li>
+      <li>Minyak goreng, gula pasir, tepung terigu, garam</li>
+      <li>Telur, mi instan, kecap, saus, sambal, santan, bumbu masak</li>
+      <li>Kopi, teh, susu kental manis dan susu bubuk</li>
+      <li>Sabun cuci, deterjen, sabun mandi, sampo, pasta gigi, rokok</li>
+      <li>Kebutuhan lain: tanya stok via WhatsApp</li>
+    </ul>
+    <a class="btn" href="https://wa.me/6283892585155?text=Halo%20Tumaninda%2C%20saya%20ingin%20tanya%20harga%20grosir%20sembako">Minta daftar harga</a>
+  </article>
+  <article class="biz laundry" id="laundry">
+    <h2>Tumaninda Laundry</h2>
+    <p>Cuci bersih, wangi, dan dikembalikan sesuai janji.</p>
+    <ul>
+      <li>Kiloan: Rp6.000 per kg</li>
+      <li>Satuan: selimut, bed cover, jaket (tarif via WhatsApp)</li>
+      <li>Layanan express (tarif via WhatsApp)</li>
+      <li>Antar-jemput gratis radius 4 km (di luar itu, ongkir via WhatsApp)</li>
+    </ul>
+    <a class="btn" href="https://wa.me/6283892585155?text=Halo%20Tumaninda%2C%20saya%20ingin%20tanya%20layanan%20laundry">Tanya tarif laundry</a>
+  </article>
+</section>
+
+<section class="wrap why">
+  <h2>Kenapa pelanggan kembali</h2>
+  <div>
+    <section><h3>Harga jelas</h3><p>Daftar harga dikirim lewat WhatsApp, tanpa biaya tersembunyi.</p></section>
+    <section><h3>Tepat waktu</h3><p>Pesanan diantar dan cucian selesai sesuai jadwal yang disepakati.</p></section>
+    <section><h3>Mudah dipesan</h3><p>Cukup kirim pesan. Tidak perlu daftar atau install aplikasi.</p></section>
+  </div>
+</section>
+
+<section class="wrap why">
+  <h2>Cara pesan dan bayar</h2>
+  <div>
+    <section><h3>Pesan lewat WhatsApp</h3><p>Kirim daftar belanja atau jadwal jemput laundry. Kami hitung total dan ongkir.</p></section>
+    <section><h3>Terima link pembayaran</h3><p>Link dikirim lewat WhatsApp sesuai total tagihan Anda.</p></section>
+    <section><h3>Bayar dan pesanan diproses</h3><p>Bayar lewat QRIS, transfer bank, e-wallet, atau paylater.</p></section>
+  </div>
+</section>
+
+<section class="contact" id="kontak"><div class="wrap">
+  <h2>Hubungi kami</h2>
+  <p><strong>WhatsApp:</strong> <a href="https://wa.me/6283892585155">0838-9258-5155</a></p>
+  <p><strong>Alamat:</strong> Jl. Sunter Karya Timur Blok HA5 No. 7A, RT 1/RW 14, Sunter Agung, Tanjung Priok, Jakarta Utara 14350</p>
+  <p><a class="btn alt" style="margin:8px 0 0" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Jl.+Sunter+Karya+Timur+Blok+HA5+No.+7A+Sunter+Agung+Tanjung+Priok+Jakarta+14350">Buka di Google Maps</a></p>
+  <p><strong>Jam buka:</strong> Setiap hari, 08.00 – 22.00</p>
+  <p><strong>Antar-jemput:</strong> gratis radius 4 km dari toko, ongkir di luar radius via WhatsApp</p>
+</div></section>
+</main>
+
+<footer><div class="wrap">© 2026 Tumaninda</div></footer>
+</body>
+</html>
